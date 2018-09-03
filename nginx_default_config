@@ -1,0 +1,12 @@
+
+server {
+        listen   80; 
+
+        root /var/www/html;
+        index index.html index.htm;
+        server_name _;
+
+        location ~ ^/$ {
+                try_files /landingPage/ /index.html;
+        }
+}
